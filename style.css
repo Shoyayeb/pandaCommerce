@@ -1,6 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;500;700&display=swap');
 
 body {
-    font-family: 'Lato',
-        sans-serif;
+    font-family: 'Lato', sans-serif !important;
 }
+
+/*
+
+navbar styles
+
+*/
+#nav-Search {
+    width: 480px;
+    height: 48px;
+    opacity: .5;
+    background: #F1F1F1;
+    margin: 0 56px;
+    cursor: text;
+}
+
+.navSearchText {
+    color: gray;
+}
+
+#nav-Search:hover .navSearchText {
+    display: none;
+}
+
+.navSearchCursor {
+    display: none;
+}
+
+#nav-Search:hover .navSearchCursor {
+    display: block;
+    animation-name: cursorAnimation;
+    animation-timing-function: ease-in-out;
+    animation-duration: .8s;
+    animation-delay: .4s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes cursorAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+i.fa-search {
+    color: gray;
+}
+/* navbar Styles done */
