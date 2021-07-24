@@ -15,52 +15,58 @@
 
 <body>
   <div class="container-fluid">
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="./images/logo.png" alt="Logo" class="d-inline-block align-text-top">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <form class="">
-            <div class="rounded-pill d-flex justify-content-lg-between align-items-center" data-bs-toggle="modal"
-              data-bs-target="#exampleModal" id="nav-Search">
-              <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
-              <div class="">
-                <p class="ms-4 fw-bolder mt-lg-2 fs-5 navSearchText">Search</p>
-                <p class="ms-4 fw-bolder mt-lg-2 fs-5 navSearchCursor">|</p>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo.png" alt="Logo" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <form class="">
+              <div class="rounded-pill d-flex justify-content-lg-between align-items-center" data-bs-toggle="modal"
+                data-bs-target="#exampleModal" id="nav-Search">
+                <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+                <div class="">
+                  <p class="ms-4 fw-bolder mt-lg-2 fs-5 navSearchText">Search</p>
+                  <p class="ms-4 fw-bolder mt-lg-2 fs-5 navSearchCursor">|</p>
+                </div>
+                <div class="">
+                  <a class="me-3 cursor-pointer">
+                    <i class="fa fa-search"></i>
+                  </a>
+                </div>
               </div>
-              <div class="">
-                <a class="me-3 cursor-pointer">
-                  <i class="fa fa-search"></i>
-                </a>
-              </div>
-            </div>
-          </form>
-          <li class="nav-item">
-            <a class="nav-link fw-bold active" aria-current="page" href="#homeSection">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#productSection">Product</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#aboutSection">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contactSection">Contact Us</a>
-          </li>
-        </ul>
+            </form>
+            <li class="nav-item">
+              <a class="nav-link fw-bold active" aria-current="page" href="#homeSection">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#productSection">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutSection">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contactSection">Contact Us</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
   </div>
-  
 
-  <!-- Modal Search -->
+
+  <!-- 
+    
+
+    Modal Search
+  
+  
+  -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -122,7 +128,8 @@
               <div class="col-md-7">
                 <h1>Mega LCD TV For Sports</h1>
                 <p>This is the best tv in the world for people who just want to waste time in front of tv.</p>
-                <h1 class="price">$1200</h1>
+                <h1 class="price-strike"><strike>$1200</strike></h1>
+                <h1 class="price">$1000</h1>
                 <button class="buy-now-button">Buy Now</button>
               </div>
               <div class="col-md-5">
@@ -171,7 +178,6 @@
         </button>
       </div>
     </div>
-
   </div>
   <!-- 
 
@@ -181,7 +187,39 @@
 
    -->
   <div id="productSection">
+    <section class="container my-lg-5">
+      <div class="row g-2">
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="p-3 d-lg-flex align-items-lg-center justify-content-lg-between" id="catagoriesBg1">
+            <h1 class="text-white">
+              Watch
+            </h1>
+            <img src="/images/categories/watch.png" class="w-25" alt="">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="p-3 d-lg-flex align-items-lg-center justify-content-lg-between" id="catagoriesBg2">
+            <h1 class="text-white">
+              Bag
+            </h1>
+            <img src="/images/categories/bag.png" class="w-25" alt="">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="p-3 d-lg-flex align-items-lg-center justify-content-lg-between" id="catagoriesBg3">
+            <h1 class="text-white">
+              Shoes
+            </h1>
+            <img src="/images/categories/shoes.png" class="w-25" alt="">
+          </div>
+        </div>
 
+      </div>
+    </section>
+    <section class="container ">
+      
+
+    </section>
   </div>
   <!-- 
 
